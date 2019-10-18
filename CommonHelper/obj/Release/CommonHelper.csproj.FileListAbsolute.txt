@@ -1,0 +1,7 @@
+D:\Work\Product\PPTControl\CommonHelper\bin\Release\CommonHelper.dll
+D:\Work\Product\PPTControl\CommonHelper\bin\Release\CommonHelper.pdb
+D:\Work\Product\PPTControl\CommonHelper\bin\Release\Newtonsoft.Json.dll
+D:\Work\Product\PPTControl\CommonHelper\bin\Release\Newtonsoft.Json.xml
+D:\Work\Product\PPTControl\CommonHelper\obj\Release\CommonHelper.csprojResolveAssemblyReference.cache
+D:\Work\Product\PPTControl\CommonHelper\obj\Release\CommonHelper.dll
+D:\Work\Product\PPTControl\CommonHelper\obj\Release\CommonHelper.pdb

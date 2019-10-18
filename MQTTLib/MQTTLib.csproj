@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26C377A3-09E2-4C66-981F-906499671E9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MQTTLib</RootNamespace>
+    <AssemblyName>MQTTLib</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MqttLib\CompleteArgs.cs" />
+    <Compile Include="MqttLib\Core\Messages\IPersistentMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MessageFactory.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttAcknowledgeMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttConnackMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttConnectMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttDisconnectMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttMessageReceivedEventArgs.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPingReqMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPingRespMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPubackMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPubcompMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPublishMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPubrecMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttPubrelMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttSubackMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttSubscribeMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttUnsubackMessage.cs" />
+    <Compile Include="MqttLib\Core\Messages\MqttUnsubscribeMessage.cs" />
+    <Compile Include="MqttLib\Core\MQTTStreamExceptions.cs" />
+    <Compile Include="MqttLib\Core\NotConnectedException.cs" />
+    <Compile Include="MqttLib\Core\QoSManager.cs" />
+    <Compile Include="MqttLib\Core\StreamFactory.cs" />
+    <Compile Include="MqttLib\Core\StreamManager.cs" />
+    <Compile Include="MqttLib\Core\Subscription.cs" />
+    <Compile Include="MqttLib\IMqtt.cs" />
+    <Compile Include="MqttLib\IMqttConnectDisconnect.cs" />
+    <Compile Include="MqttLib\IMqttPublisher.cs" />
+    <Compile Include="MqttLib\IMqttShared.cs" />
+    <Compile Include="MqttLib\IMqttSharedSubscriber.cs" />
+    <Compile Include="MqttLib\IMqttSubscriber.cs" />
+    <Compile Include="MqttLib\IPersistence.cs" />
+    <Compile Include="MqttLib\Logger\FileLog.cs" />
+    <Compile Include="MqttLib\Logger\ILog.cs" />
+    <Compile Include="MqttLib\Logger\Log.cs" />
+    <Compile Include="MqttLib\MatchTree\Topic.cs" />
+    <Compile Include="MqttLib\MatchTree\TopicNode.cs" />
+    <Compile Include="MqttLib\MatchTree\TopicTree.cs" />
+    <Compile Include="MqttLib\Mqtt.cs" />
+    <Compile Include="MqttLib\MqttBroker.cs" />
+    <Compile Include="MqttLib\MqttBrokerUnavailableException.cs" />
+    <Compile Include="MqttLib\MqttClientFactory.cs" />
+    <Compile Include="MqttLib\MqttDelegates.cs" />
+    <Compile Include="MqttLib\MqttException.cs" />
+    <Compile Include="MqttLib\MqttNotConnectedException.cs" />
+    <Compile Include="MqttLib\MqttParcel.cs" />
+    <Compile Include="MqttLib\MqttPayload.cs" />
+    <Compile Include="MqttLib\PublishArrivedArgs.cs" />
+    <Compile Include="MqttLib\QoS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

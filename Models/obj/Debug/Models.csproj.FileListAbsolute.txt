@@ -1,0 +1,5 @@
+D:\Work\Product\PPTControl\Models\bin\Debug\Models.dll
+D:\Work\Product\PPTControl\Models\bin\Debug\Models.pdb
+D:\Work\Product\PPTControl\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Work\Product\PPTControl\Models\obj\Debug\Models.dll
+D:\Work\Product\PPTControl\Models\obj\Debug\Models.pdb

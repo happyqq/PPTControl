@@ -1,0 +1,4 @@
+D:\Work\Product\PPTControl\MQTTLib\bin\Debug\MQTTLib.dll
+D:\Work\Product\PPTControl\MQTTLib\bin\Debug\MQTTLib.pdb
+D:\Work\Product\PPTControl\MQTTLib\obj\Debug\MQTTLib.dll
+D:\Work\Product\PPTControl\MQTTLib\obj\Debug\MQTTLib.pdb
